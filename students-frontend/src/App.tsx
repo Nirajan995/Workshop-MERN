@@ -35,7 +35,7 @@ function App() {
   };
 
   const handleUpdate = async (id: string) => {
-    const response: any = await axios.patch(`${apiURL}/students/${id}`, {
+    await axios.patch(`${apiURL}/students/${id}`, {
       name,
       hasAttended,
       attendedDate,
