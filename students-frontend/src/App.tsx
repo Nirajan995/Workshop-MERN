@@ -10,7 +10,7 @@ function App() {
   const [attendedDate, setAttendedDate] = useState("");
   const [editingId, setEditingId] = useState<any>(null);
 
-  const apiURL = "http://localhost:8080";
+  const apiURL = "https://workshop-day-1.vercel.app";
 
   useEffect(() => {
     fetchStudents();
